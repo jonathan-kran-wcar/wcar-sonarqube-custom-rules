@@ -8,7 +8,7 @@ import org.sonar.plugins.java.api.JavaFileScanner;
 import org.sonar.plugins.java.api.JavaFileScannerContext;
 import org.sonar.plugins.java.api.tree.BaseTreeVisitor;
 
-@Rule(key = "LogPercentage")
+@Rule(key = "LogPercentage", tags = {"log"})
 public class LogPercentageRule implements JavaFileScanner {
     Pattern infoPattern = Pattern.compile("(LOGGER.info\\(.*\\);)");
     Pattern debugPattern = Pattern.compile("(LOGGER.debug\\(.*\\);)");
