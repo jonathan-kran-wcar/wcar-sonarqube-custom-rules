@@ -1,5 +1,5 @@
 {
-  "title": "Title of MyCustom",
+  "title": "The file has a high percentage of log lines versus other lines",
   "type": "CODE_SMELL",
   "status": "ready",
   "remediation": {
@@ -7,7 +7,7 @@
     "constantCost": "5min"
   },
   "tags": [
-    "pitfall"
+    "log"
   ],
-  "defaultSeverity": "Blocker"
+  "defaultSeverity": "Minor"
 }
