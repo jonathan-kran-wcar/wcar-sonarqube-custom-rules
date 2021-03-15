@@ -11,7 +11,11 @@ public class LogCountCompute implements MeasureComputer {
   @Override
   public MeasureComputerDefinition define(MeasureComputerDefinitionContext measureComputerDefinitionContext) {
     return measureComputerDefinitionContext.newDefinitionBuilder()
-        .setOutputMetrics(LogsMetrics.TOTAL_FILE_LINES.key(), LogsMetrics.TOTAL.key(), LogsMetrics.INFO.key(), LogsMetrics.DEBUG.key())
+        .setOutputMetrics(
+                LogsMetrics.TOTAL_FILE_LINES.key(),
+                LogsMetrics.TOTAL.key(),
+                LogsMetrics.INFO.key(),
+                LogsMetrics.DEBUG.key())
         .build();
   }
 

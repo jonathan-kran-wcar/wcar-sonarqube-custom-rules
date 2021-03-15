@@ -31,7 +31,6 @@ public class LogQualityRule extends IssuableSubscriptionVisitor {
 
     private static final Set<String> LoggingMemberFunctions = new HashSet<>(Arrays.asList("info", "debug", "error"));
 
-
     @Override
     @ParametersAreNonnullByDefault
     public void visitNode(Tree tree) {
