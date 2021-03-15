@@ -33,9 +33,8 @@ public class LogPercentageRule implements JavaFileScanner {
 
         if (totalLogCount > 0) {
             double logLinesPercentage = ((double) totalLogCount / totalLinesCount) * 100;
-            if (logLinesPercentage > 2) {
-                context.reportIssue(this, context.getTree(), String.format("Log percentage is above one percent (%.2f %%)", logLinesPercentage));
-            }
+            if (logLinesPercentage > 5)
+            context.reportIssue(this, context.getTree(), String.format("Log percentage is above 5 %% (%.2f %%)", logLinesPercentage));
         }
     }
 
